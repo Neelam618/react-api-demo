@@ -30,7 +30,7 @@ export default function GetApi() {
 
     return (
         <div>
-            <h1>Delete Method</h1>
+            <h1>DELETE method</h1>
             <table border="1">
                 <tr>
                     <th>User ID</th>

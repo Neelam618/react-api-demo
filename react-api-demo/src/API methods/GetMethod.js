@@ -14,7 +14,7 @@ export default function GetApi() {
 
     return (
         <div>
-            <h1>Get API Call</h1>
+            <h1>GET method</h1>
             <table border="1">
                 <tr>
                     <th>PostId</th>

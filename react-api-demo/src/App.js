@@ -1,7 +1,9 @@
 import './App.css';
-import GetApi from './API methods/GetApi'
-import PostApi from './API methods/PostApi'
+import GetApi from './API methods/GetMethod'
+import PostApi from './API methods/PostMethod'
 import DeleteMethod from './API methods/DeleteMethod'
+import PutMethod from './API methods/PutMethod'
+
 
 function App() {
   
@@ -10,6 +12,7 @@ function App() {
       <GetApi />
       <PostApi />
       <DeleteMethod />
+      <PutMethod />
     </div>
   );
 }

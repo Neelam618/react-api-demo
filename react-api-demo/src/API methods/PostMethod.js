@@ -24,7 +24,7 @@ export default function PostApi() {
 
     return (
         <div>
-            <h1>POST API</h1>
+            <h1>POST method</h1>
             {/* controlled inputs */}
             {/* Send below data to api */}
             <input type="number" value={userId} onChange={(e)=> setUserId(e.target.value)} name="userId" /><br/><br/>    
