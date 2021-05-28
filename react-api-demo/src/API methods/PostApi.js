@@ -7,7 +7,7 @@ export default function PostApi() {
     function saveUser() {
         console.log({userId, title,body})
         let data ={userId, title,body}
-        fetch('https://jsonplaceholder.typicode.com/posts', {
+        fetch('http://localhost:3004/data', {
             method: 'POST',
             headers: {
                 'Accept':'application/json',
