@@ -3,14 +3,18 @@ import React, { useEffect, useState } from 'react'
 export default function GetApi() {
     const [data, setData] = useState([])
     useEffect(() => {
+        refreshData()
+    }, [])
+    console.log(data)
+
+    function refreshData() {
         fetch("http://localhost:3004/data").then((result) => {
             result.json().then((resp) => {
                 // console.log("result",resp)
                 setData(resp)
             })
         })
-    }, [])
-    console.log(data)
+    }
 
     function deleteUser(id){
         // alert(id)
@@ -18,6 +22,7 @@ export default function GetApi() {
             method: 'DELETE'
         }).then((result)=>{
             result.json().then((resp)=>{
+                refreshData()
                 console.log(resp)
             })
         })            
