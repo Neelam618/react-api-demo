@@ -14,13 +14,13 @@ export default function GetApi() {
 
     function deleteUser(id){
         // alert(id)
-        fetch(`http://localhost:3004/data/${id}`, {
+        fetch(`http://localhost:3004/data/${id}`, {  // or fetch("http://localhost:3004/data/"+id)
             method: 'DELETE'
         }).then((result)=>{
             result.json().then((resp)=>{
                 console.log(resp)
             })
-        })             // or fetch("http://localhost:3004/data/"+id)    
+        })            
     }
 
     return (
