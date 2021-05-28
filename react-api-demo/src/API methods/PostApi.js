@@ -15,7 +15,10 @@ export default function PostApi() {
             },
             body: JSON.stringify(data)
         }).then((result)=>{
-            console.log("result", result)
+            // console.log("result", result)  //not readable data
+            result.json().then((resp)=>{
+                console.log("resp", resp)  //readable data
+            })
         })
     }
 
